@@ -1,0 +1,424 @@
+.nav__elements,
+.nav__items,
+.nav__lists,
+.nav__socials {
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  margin: 0;
+}
+
+.nav__lists {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__list1,
+.nav__list3 {
+  display: none;
+}
+
+.nav__list2 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.nav__phone {
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0;
+}
+
+.nav__items {
+  flex-direction: column;
+}
+
+.nav__border {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.nav__icon {
+  fill: #ffffff;
+}
+
+.nav__icon-phone {
+  width: 12px;
+  height: 14px;
+}
+
+.nav__icon-mark {
+  width: 10px;
+  height: 15px;
+}
+
+.nav__elements {
+  flex-direction: column;
+  justify-content: center;
+  animation: bounce 0.3s;
+}
+@keyframes bounce {
+  0% {
+    transform: translateX(-290px);
+  }
+}
+
+.nav__social {
+  display: none;
+}
+
+.nav__social a img {
+  width: 39px;
+  height: 39px;
+}
+
+.nav__element {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.nav__element--active a span {
+  border-bottom: 4px solid #44e0dd;
+}
+
+.nav__element a span {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.nav__element a {
+  text-decoration: none;
+  text-align: center;
+  width: 100%;
+  padding: 2%;
+}
+
+.nav__logo-icon {
+  fill: #44e0dd;
+  width: 50px;
+  height: 52px;
+  margin-right: 5px;
+}
+
+.nav__logo {
+  text-align: left;
+}
+
+.nav__logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 26px;
+  color: #ffffff;
+}
+
+.nav__logo a span {
+  color: #44e0dd;
+}
+
+.nav__logo h1 {
+  font-size: 10px;
+  line-height: 4px;
+  color: #ffffff;
+  margin: 0;
+  font-family: "Open Sans";
+}
+////////////////////////////button///////////////
+.nav-open {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-hide {
+  display: none;
+}
+
+.nav-show {
+  display: flex;
+}
+
+.nav-open:focus {
+  outline: none;
+}
+
+.nav-open span {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 4px;
+  right: 3px;
+  height: 4px;
+  background: #ffffff;
+}
+
+.nav-open span::after,
+.nav-open span::before {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #ffffff;
+  content: "";
+}
+
+.nav-open span::before {
+  top: -8px;
+}
+
+.nav-open span::after {
+  bottom: -8px;
+}
+
+.nav-open--htx {
+  background-color: #2b2b2b;
+}
+
+.nav-open--htx span {
+  transition: background 0s 0.3s;
+}
+
+.nav-open--htx span::after,
+.nav-open--htx span::before {
+  transition-duration: 0.3s, 0.3s;
+  transition-delay: 0.3s, 0s;
+}
+
+.nav-open--htx span::before {
+  transition-property: top, transform;
+}
+
+.nav-open--htx span::after {
+  transition-property: bottom, transform;
+}
+/* состояние active при открытом меню  */
+.nav-open--htx.is-active {
+  background-color: #2b2b2b;
+}
+
+.nav-open--htx.is-active span {
+  background: none;
+}
+
+.nav-open--htx.is-active span::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav-open--htx.is-active span::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.nav-open--htx.is-active span::after,
+.nav-open--htx.is-active span::before {
+  transition-delay: 0s, 0.3s;
+}
+////////////////////////////////////////////////////////////////
+@media (min-width: @size-tablet) {
+  .nav__elements,
+  .nav__lists {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav__elements {
+    margin-left: 0;
+    margin-right: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    animation: none;
+    width: 600px;
+    justify-content: space-between;
+    margin-top: 11px;
+  }
+
+  .nav__element {
+    margin-right: 5px;
+  }
+  .nav__items,
+  .nav__lists {
+    margin-left: 5%;
+    margin-right: 5%;
+    justify-content: space-between;
+  }
+
+  .nav-close,
+  .nav-open {
+    display: none;
+  }
+
+  .nav__logo a {
+    font-size: 30px;
+  }
+
+  .nav__list1,
+  .nav__list3 {
+    display: flex;
+  }
+
+  .nav__logo h1 {
+    font-size: 12px;
+  }
+
+  .nav__phone {
+    font-size: 16px;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .nav__address {
+    font-family: "open sans semibold";
+    font-size: 12px;
+    line-height: 14px;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .nav__time {
+    font-family: "open sans";
+    font-weight: bold;
+    line-height: 14px;
+    color: #ffffff;
+    margin: 0;
+    font-size: 12px;
+  }
+
+  .nav__time span {
+    font-size: 10px;
+  }
+
+  .nav__element a span {
+    font-size: 12px;
+  }
+
+  .nav__element a {
+    padding: 0;
+  }
+
+  .nav__items {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav__socials,
+  .nav__social {
+    display: flex;
+  }
+
+  .nav__element--active a span {
+    padding-bottom: 10px;
+  }
+
+  .nav__social {
+    padding-left: 23px;
+    width: 33px;
+    height: 33px;
+  }
+.nav__socials {
+  margin-bottom: 15px;
+}
+    // .nav__element a {
+    //   padding: 0;
+    // }
+}
+@media (min-width: @size-desktop) {
+
+  .nav__logo a {
+    font-size: 36px;
+  }
+
+  .nav__logo h1 {
+    font-size: 16px;
+  }
+
+  .nav__phone {
+    font-size: 24px;
+    color: #ffffff;
+    margin: 0;
+  }
+
+  .nav__address {
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .nav__time {
+    line-height: 20px;
+    font-size: 16px;
+  }
+
+  .nav__time span {
+    font-size: 12px;
+  }
+
+  .nav__time span {
+    font-size: 12px;
+  }
+
+  .nav__lists {
+    justify-content: space-between;
+  }
+
+  .nav__logo-icon {
+    width: 78px;
+    height: 81px;
+    margin-right: 10px;
+  }
+
+  .nav__element a span {
+    font-size: 18px;
+  }
+
+  .nav__elements {
+    width: 1160px;
+  }
+
+  .nav__items,
+  .nav__lists {
+    margin: 0;
+}
+
+.nav__border {
+  width: 36px;
+  height: 36px;
+  margin-right: 10px;
+}
+
+.nav__icon-phone {
+  width: 16px;
+  height: 18px;
+}
+
+.nav__icon-mark {
+  width: 14px;
+  height: 19px;
+}
+}

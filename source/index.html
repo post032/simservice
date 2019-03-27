@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>header</title>
+  <link href="css/style.min.css" rel="stylesheet">
+</head>
+
+<body>
+  <div style="display:none">
+    <include src="source/img/img.svg"></include>
+  </div>
+  <header class="page-header">
+    <section class="container">
+      <nav class="nav__menu1">
+        <ul class="nav__lists">
+          <li class="nav__list nav__list1">
+            <div class="nav__border">
+              <svg class="nav__icon nav__icon-phone" width="36" height="36">
+                <use xlink:href="#phone"></use>
+              </svg>
+            </div>
+            <p class="nav__phone">8-961-265-13-65</p>
+          </li>
+          <li class="nav__list nav__list2">
+            <svg class="nav__logo-icon" width="78" height="81">
+              <use xlink:href="#logo"></use>
+            </svg>
+            <div class="nav__logo">
+              <a href="index.html">SimService<span>71</span></a>
+              <h1>Сервисный центр цифровой техники</h1>
+            </div>
+            <button id="open-nav" class="nav-open nav-open--htx" type="button"><span>Меню</span></button>
+          </li>
+          <li class="nav__list nav__list3">
+            <div class="nav__border">
+              <svg class="nav__icon nav__icon-mark" width="36" height="36">
+                <use xlink:href="#mark"></use>
+              </svg>
+            </div>
+            <div class="nav__info">
+              <p class="nav__address">г.Тула, ул. Каминского, дом 8Б</p>
+              <p class="nav__time">Вт-Вс 10-00 до 17-30 <span>Пн. выходной</span></p>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav__menu2">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <ul id="nav" class="nav__elements nav-hide">
+              <li class="nav__element"><a href="#"><span>О Нас</span></a></li>
+              <li class="nav__element"><a href="#"><span>Apple</span></a></li>
+              <li class="nav__element"><a href="#"><span>Смартфоны</span></a></li>
+              <li class="nav__element"><a href="#"><span>Планшеты</span></a></li>
+              <li class="nav__element"><a href="#"><span>Ноутбуки</span></a></li>
+              <li class="nav__element"><a href="#"><span>Скупка</span></a></li>
+              <li class="nav__element"><a href="#"><span>Отзывы</span></a></li>
+              <li class="nav__element nav__element--active"><a href="#"><span>Акции и скидки</span></a></li>
+              <li class="nav__element"><a href="#"><span>Контакты</span></a></li>
+            </ul>
+          </li>
+          <li class="nav__item">
+            <ul class="nav__socials">
+              <li class="nav__social">
+                <a href="#">
+                  <img src="img/vk.png" alt="vk">
+                  <span class="visually-hidden">Vkontakte</span></a>
+              </li>
+              <li class="nav__social">
+                <a href="#">
+                  <img src="img/in.png" alt="in">
+                  <span class="visually-hidden">instagram</span></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </section>
+  </header>
+  <main class="page-main container">
+    <section class="map">
+      <div class="map__info">
+        <section class="map__content">
+          <h2>Связаться с нами</h2>
+          <ul class="map__lists">
+            <li class="map__list">
+              <h3>наш Телефон</h3>
+              <div class="map__item">
+                <svg width="18" height="16">
+                  <use xlink:href="#phone"></use>
+                </svg>
+                <p class="map__phone">8-961-265-13-65</p>
+              </div>
+            </li>
+            <li class="map__list">
+              <h3>Наш офис</h3>
+              <div class="map__item">
+                <svg width="14" height="19">
+                  <use xlink:href="#mark"></use>
+                </svg>
+                <p class="map__family">г.Тула, ул. Каминского, дом 8Б</p>
+              </div>
+            </li>
+            <li class="map__list">
+              <h3>график работы</h3>
+              <div class="map__item">
+                <svg width="22" height="22">
+                  <use xlink:href="#clock"></use>
+                </svg>
+                <p class="map__family">Вт-Вс 10-00 до 17-30 Пн. выходной</p>
+              </div>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <div class="footer container">
+      <div class="footer-one">
+        <section class="footer__logo">
+          <img src="img/logo-footer.png" alt="logo">
+        </section>
+        <nav class="footer-menu">
+          <ul class="footer-menu__lists">
+            <li class="footer-menu__list"><a href="#">О Нас</a></li>
+            <li class="footer-menu__list"><a href="#">Apple</a></li>
+            <li class="footer-menu__list"><a href="#">Смартфоны</a></li>
+            <li class="footer-menu__list"><a href="#">Планшеты</a></li>
+            <li class="footer-menu__list"><a href="#">Ноутбуки</a></li>
+          </ul>
+          <ul class="footer-menu__items">
+            <li class="footer-menu__item"><a href="#">Скупка</a></li>
+            <li class="footer-menu__item"><a href="#">Отзывы</a></li>
+            <li class="footer-menu__item"><a href="#">Акции и скидки</a></li>
+            <li class="footer-menu__item"><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <section class="footer__phone">
+          <p>8-961-265-13-65</p>
+        </section>
+        <section class="footer__address">
+          <p class="footer__address-text1">г.Тула, ул. Каминского, дом 8Б</p>
+          <p class="footer__address-text2">Вт-Вс 10-00 до 17-30 Пн. выходной</p>
+          <div class="footer-social">
+            <p>Мы в соцсетях</p>
+            <ul class="footer-social__lists">
+              <li class="footer-social__list">
+                <a href="#">
+                  <img src="img/vk.png" alt="in">
+                  <span class="visually-hidden">Vkontakte</span></a>
+              </li>
+              <li class="footer-social__list">
+                <a href="#">
+                  <img src="img/in.png" alt="in">
+                  <span class="visually-hidden">instagram</span></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+      <div class="footer-two">
+        <section class="footer-copyright">
+          <p>© 2019 SimService71 - сервисный центр техники </p>
+          <p class="footer__tablet">Соглашение на обработку персональных данных</p>
+        </section>
+        <section class="footer-info">
+          <p>Сайт носит информационный характер и не является публичной офертой, определяемой положениями ч.2 ст. 437 ГК РФ. Для получения подробной информации о стоимости услуг обращайтесь к администраторам сервисного центра.</p>
+        </section>
+      </div>
+    </div>
+  </footer>
+  <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
