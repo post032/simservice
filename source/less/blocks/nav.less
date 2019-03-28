@@ -138,6 +138,7 @@
   font-family: "Open Sans";
 }
 ////////////////////////////button///////////////
+
 .nav-open {
   display: block;
   position: relative;
@@ -263,6 +264,7 @@
   .nav__element {
     margin-right: 5px;
   }
+
   .nav__items,
   .nav__lists {
     margin-left: 5%;
@@ -328,8 +330,8 @@
     justify-content: space-between;
   }
 
-  .nav__socials,
-  .nav__social {
+  .nav__social,
+  .nav__socials {
     display: flex;
   }
 
@@ -342,15 +344,23 @@
     width: 33px;
     height: 33px;
   }
-.nav__socials {
-  margin-bottom: 15px;
+
+  .nav__socials {
+    margin-bottom: 15px;
+  }
+  // .nav__element a {
+  //   padding: 0;
+  // }
 }
-    // .nav__element a {
-    //   padding: 0;
-    // }
+@media (min-width: 1024px) {
+  .nav__element a span {
+    font-size: 16px;
+  }
+  .nav__elements {
+    width: 800px;
+  }
 }
 @media (min-width: @size-desktop) {
-
   .nav__logo a {
     font-size: 36px;
   }
@@ -401,24 +411,20 @@
     width: 1160px;
   }
 
-  .nav__items,
-  .nav__lists {
-    margin: 0;
-}
 
-.nav__border {
-  width: 36px;
-  height: 36px;
-  margin-right: 10px;
-}
+  .nav__border {
+    width: 36px;
+    height: 36px;
+    margin-right: 10px;
+  }
 
-.nav__icon-phone {
-  width: 16px;
-  height: 18px;
-}
+  .nav__icon-phone {
+    width: 16px;
+    height: 18px;
+  }
 
-.nav__icon-mark {
-  width: 14px;
-  height: 19px;
-}
+  .nav__icon-mark {
+    width: 14px;
+    height: 19px;
+  }
 }
