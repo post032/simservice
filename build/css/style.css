@@ -1257,3 +1257,197 @@ input[type="radio"].visually-hidden {
     margin-bottom: 70px;
   }
 }
+.repair {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  position: relative;
+  padding-bottom: 40px;
+}
+.repair__title {
+  font-size: 36px;
+  font-family: "Intro";
+  color: #000000;
+  line-height: 1.2;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.repair__title::after {
+  content: "";
+  width: 74px;
+  height: 3px;
+  display: block;
+  background-color: #44e0dd;
+}
+.repair__link1 {
+  font-size: 12px;
+  font-family: "open sans";
+  color: #000000;
+  line-height: 1.2;
+  text-decoration: none;
+}
+.repair__link2 {
+  font-size: 12px;
+  font-family: "open sans";
+  color: #000000;
+  line-height: 1.2;
+  font-weight: bold;
+  text-decoration: none;
+}
+.repair__blocks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repair__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.repair__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-family: "open sans";
+  color: #000000;
+  line-height: 1.2;
+}
+.repair__see-next,
+.repair__button--active {
+  width: 162px;
+  height: 53px;
+  border-radius: 50px;
+}
+.repair__button--active {
+  background-color: #44e0dd;
+}
+.repair__see-next {
+  background-color: #b8b9b9;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.repair__image {
+  border-radius: 4px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(114, 112, 112, 0.23);
+          box-shadow: 0px 0px 11px 0px rgba(114, 112, 112, 0.23);
+  width: 320px;
+  min-height: 416px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repair__image img {
+  width: 300px;
+  height: 326px;
+}
+.repair__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.repair__texts {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.repair__text {
+  font-size: 16px;
+  font-family: "open sans";
+  color: #000000;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .repair__image {
+    width: 374px;
+    min-height: 486px;
+  }
+  .repair__image img {
+    width: 331px;
+    height: 359px;
+  }
+  .repair__button {
+    margin: 0;
+    margin-right: 10px;
+  }
+  .repair__buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .repair__see-next {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+@media (min-width: 1440px) {
+  .repair {
+    padding-bottom: 110px;
+  }
+  .repair__blocks {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .repair__content {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .repair__texts {
+    margin-right: 0;
+    margin-left: 50px;
+  }
+  .repair__text:first-child {
+    margin-top: 0;
+  }
+}
