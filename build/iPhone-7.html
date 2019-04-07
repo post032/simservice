@@ -274,7 +274,7 @@
             <p class="repair__name">Замена аккумулятора</p>
             <p class="repair__description">АКБ быстро разряжается, самопроизвольно выключается, не заряжается</p>
             <p class="repair__price">1490 руб.</p>
-            <button type="button" name="button">Записаться на ремонт</button>
+            <button class="repair__active" type="button" name="button">Записаться на ремонт</button>
           </li>
           <li class="repair__list">
             <p class="repair__name">Замена корпуса</p>
@@ -410,6 +410,29 @@
       </div>
     </div>
   </footer>
+  <section class="modal">
+    <form class="modal__form" action="index.html" method="post">
+      <button class="modal__close" type="button" name="button"><span>Закрыть</span></button>
+      <h2>Оставить отзыв</h2>
+      <label for="name">Ваше имя</label>
+      <input id="name" type="text" name="name" value="Иван">
+      <label for="mail">E-mail</label>
+      <input id="mail" type="text" name="mail" value="Ivan_84@mail.ru">
+      <label for="comment">Ваш отзыв</label>
+      <input id="comment" type="text" name="comment" value="Очень хороший сервис">
+      <div class="modal__load">
+        <input id="load" type="file" name="" value="Выберете фото">
+        <div class="modal__img" for="load">
+          <img src="img/img.png" alt="">
+        </div>
+        <label class="modal__download" for="load">Выберете фото</label>
+      </div>
+      <p>Нажимая "Отправить" вы даете согласие на обработку <a href="#">персональных данных</a></p>
+      <div class="modal__button">
+        <input class="modal__submit" type="submit" name="submit" value="Отправить">
+      </div>
+    </form>
+  </section>
   <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/script.js"></script>
 </body>

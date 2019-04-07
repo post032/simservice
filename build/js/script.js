@@ -15,3 +15,14 @@
       });
     }
   })();
+
+  $('.repair__list button').click(function() {
+    $('.modal').show();
+    $(this).addClass('repair__active');
+    $('.repair__list button').not(this).removeClass('repair__active');
+  });
+
+  $('.modal__close').click(function() {
+    $('.modal').hide();
+    $('.repair__list button').removeClass('repair__active');
+  });
