@@ -189,9 +189,9 @@
               <li class="nav__element"><a href="#"><span>Смартфоны</span></a></li>
               <li class="nav__element"><a href="#"><span>Планшеты</span></a></li>
               <li class="nav__element"><a href="#"><span>Ноутбуки</span></a></li>
-              <li class="nav__element"><a href="buyup.html"><span>Скупка</span></a></li>
+              <li class="nav__element nav__element--active"><a href="buyup.html"><span>Скупка</span></a></li>
               <li class="nav__element"><a href="#"><span>Отзывы</span></a></li>
-              <li class="nav__element nav__element--active"><a href="index.html"><span>Акции и скидки</span></a></li>
+              <li class="nav__element"><a href="index.html"><span>Акции и скидки</span></a></li>
               <li class="nav__element"><a href="#"><span>Контакты</span></a></li>
             </ul>
           </li>
@@ -214,77 +214,88 @@
     </section>
   </header>
   <main class="page-main">
-    <section class="stock container">
-      <h1 class="stock__title">Акции и скидки</h1>
-      <div class="stock__block">
-        <section class="stock__one">
-          <img class="stock__img" src="img/stock1.png" alt="телефон в руке">
-          <div class="stock__info">
-          <p class="stock__text">Скидка 10% на ремонт всем подписчикам соцсетей вконтакте и instagram</p>
-          <ul class="stock__socials">
-            <li class="stock__social">
-              <a href="#">
-                <img src="img/s-vkg.png" alt="vk">
-                <span class="visually-hidden">Vkontakte</span></a>
-            </li>
-            <li class="stock__social">
-              <a href="#">
-                <img src="img/s-instg.png" alt="in">
-                <span class="visually-hidden">instagram</span></a>
-            </li>
-          </ul>
-        </div>
-        </section>
-        <section class="stock__two">
-          <img class="stock__img" src="img/stock2.png" alt="телефон">
-          <p class="stock__text">При замене дисплея на любую марку iphone защитное стекло или чехол в подарок </p>
+    <section class="buyup container">
+      <h1 class="buyup__title stock__title">СКУПКА ЦИФРОВОЙ ТЕХНИКИ В ТУЛЕ</h1>
+      <div class="buyup__block">
+        <img class="buyup__img" src="img/comp.png" alt="компьютер">
+        <section class="buyup__texts">
+          <p>Купим ДОРОГО технику Apple, сотовые телефоны, смартфоны, планшеты, ноутбуки, игровые приставки, фотоаппараты, видеокамеры и другую цифровую технику.</p>
+          <p>В нашем сервисном центре также осуществляется скупка техники Apple (iPhone, iPad, iPod, Watch, iMac, Macbook), сотовых телефонов, смартфонов, планшетов, ноутбуков, игровых приставок, фотоаппаратов, видеокамер и другой цифровой техники
+            бывшего употребления в любом состоянии. В зависимости от внешнего состояния, наличия комплектации и неисправностей мы оценим ваше устройство по максимально взаимовыгодной цене.
+            В течение 10-15 минут профессиональный мастер проверит на работоспособность ваше устройство и предложит до 60% от стоимости за ваш аппарат. Выплата денежных средств осуществляется в день обращения. Для совершения сделки и оформления
+            договора купли-продажи вам необходимо при себе иметь всего лишь паспорт.</p>
+          <p>Вам больше не нужно задумываться над вопросом, как и где продать свою старую технику. Мы обязательно вам поможем! Приезжайте в наш сервис, мы всегда находим общий язык абсолютно со всеми нашими клиентами. Также вы можете <a href="#">оставить заявку</a>
+            или позвонить нам.</p>
         </section>
       </div>
-      <div class="stock__buttons">
-        <button class="stock__button" type="button" name="button">назад</button>
-        <button class="stock__button stock__button--active" type="button" name="button">1</button>
-        <button class="stock__button" type="button" name="button">2</button>
-        <button class="stock__button" type="button" name="button">3</button>
-        <button class="stock__button stock__button--next" type="button" name="button">Вперед</button>
+      <div class="buyup__position">
+        <section class="buyup__choice">
+          <img class="buyup__item buyup__samsung" src="img/samsung.png" alt="samsung">
+          <img class="buyup__item buyup__apple" src="img/apple.png" alt="apple">
+          <img class="buyup__item buyup__sony" src="img/sony.png" alt="sony">
+          <img class="buyup__item buyup__lenovo" src="img/lenovo.png" alt="lenovo">
+          <img class="buyup__item buyup__nokia" src="img/nokia.png" alt="nokia">
+          <img class="buyup__item buyup__xioma" src="img/xioma.png" alt="xioma">
+        </section>
+      </div>
+    </section>
+    <section class="buyup2">
+      <header class="buyup2__header">
+        <h2>если вы хотите продать свою технику Заполните заявку </h2>
+        <p>И наш специалист свяжется с вами в ближайшее время</p>
+      </header>
+      <div class="buyup2__form--position">
+        <form class="buyup2__form" action="index.html" method="post">
+          <label for="name">Ваше имя</label>
+          <input class="buyup2__input" id="name" type="text" name="" value="" placeholder="Иван">
+          <label for="phone">Ваш номер телефона</label>
+          <input class="buyup2__input" id="phone" type="text" name="" value="" placeholder="+7(___)-___-__-__">
+          <label for="">Ваше сообщение</label>
+          <input class="buyup2__input" type="text" name="" value="" placeholder="Не включается iphone 5S">
+          <p>Нажимая "Отправить" вы даете согласие на обработку <a href="#">персональных данных</a></p>
+          <div class="buyup2__submit--position">
+            <input class="buyup2__submit" type="submit" name="" value="Отправить">
+          </div>
+        </form>
       </div>
     </section>
     <div class="map__background">
-    <section class="map container">
-      <div class="map__info">
-        <section class="map__content">
-          <h2>Связаться с нами</h2>
-          <ul class="map__lists">
-            <li class="map__list">
-              <h3>наш Телефон</h3>
-              <div class="map__item">
-                <svg width="18" height="16">
-                  <use xlink:href="#phone"></use>
-                </svg>
-                <p class="map__phone">8-961-265-13-65</p>
-              </div>
-            </li>
-            <li class="map__list">
-              <h3>Наш офис</h3>
-              <div class="map__item">
-                <svg width="14" height="19">
-                  <use xlink:href="#mark"></use>
-                </svg>
-                <p class="map__family">г.Тула, ул. Каминского, дом 8Б</p>
-              </div>
-            </li>
-            <li class="map__list">
-              <h3>график работы</h3>
-              <div class="map__item">
-                <svg width="22" height="22">
-                  <use xlink:href="#clock"></use>
-                </svg>
-                <p class="map__family">Вт-Вс 10-00 до 17-30 Пн. выходной</p>
-              </div>
-            </li>
-          </ul>
-        </section>
-      </div>
-    </section>
+      <section class="map container">
+        <div class="map__info">
+          <section class="map__content">
+            <h2>Связаться с нами</h2>
+            <ul class="map__lists">
+              <li class="map__list">
+                <h3>наш Телефон</h3>
+                <div class="map__item">
+                  <svg width="18" height="16">
+                    <use xlink:href="#phone"></use>
+                  </svg>
+                  <p class="map__phone">8-961-265-13-65</p>
+                </div>
+              </li>
+              <li class="map__list">
+                <h3>Наш офис</h3>
+                <div class="map__item">
+                  <svg width="14" height="19">
+                    <use xlink:href="#mark"></use>
+                  </svg>
+                  <p class="map__family">г.Тула, ул. Каминского, дом 8Б</p>
+                </div>
+              </li>
+              <li class="map__list">
+                <h3>график работы</h3>
+                <div class="map__item">
+                  <svg width="22" height="22">
+                    <use xlink:href="#clock"></use>
+                  </svg>
+                  <p class="map__family">Вт-Вс 10-00 до 17-30 Пн. выходной</p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </div>
+      </section>
     </div>
   </main>
   <footer class="page-footer">
@@ -302,7 +313,7 @@
             <li class="footer-menu__list"><a href="#">Ноутбуки</a></li>
           </ul>
           <ul class="footer-menu__items">
-            <li class="footer-menu__item"><a href="buyup.html">Скупка</a></li>
+            <li class="footer-menu__item"><a href="#">Скупка</a></li>
             <li class="footer-menu__item"><a href="#">Отзывы</a></li>
             <li class="footer-menu__item"><a href="#">Акции и скидки</a></li>
             <li class="footer-menu__item"><a href="#">Контакты</a></li>
