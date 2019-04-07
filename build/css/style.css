@@ -1081,6 +1081,8 @@ input[type="radio"].visually-hidden {
   line-height: 1.2;
   margin-top: 50px;
   margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .stock__title::after {
   content: "";
@@ -1108,6 +1110,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .stock__one,
 .stock__two {
@@ -1167,6 +1171,8 @@ input[type="radio"].visually-hidden {
           justify-content: flex-end;
   margin-top: 40px;
   margin-bottom: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .stock__button {
   background-color: #dddddd;
@@ -1270,6 +1276,8 @@ input[type="radio"].visually-hidden {
   line-height: 1.2;
   margin-top: 50px;
   margin-bottom: 30px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .repair__title::after {
   content: "";
@@ -1277,6 +1285,19 @@ input[type="radio"].visually-hidden {
   height: 3px;
   display: block;
   background-color: #44e0dd;
+}
+.repair__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .repair__link1 {
   font-size: 12px;
@@ -1307,6 +1328,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .repair__buttons {
   display: -webkit-box;
@@ -1384,16 +1407,16 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.repair__texts {
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .repair__text {
   font-size: 16px;
   font-family: "open sans";
   color: #000000;
   line-height: 1.2;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 @media (min-width: 768px) {
   .repair__image {
@@ -1711,6 +1734,13 @@ input[type="radio"].visually-hidden {
   }
   .buyup2__submit--position {
     margin-top: 40px;
+  }
+  .buyup2__header h2,
+  .buyup2__header p,
+  .buyup__texts p,
+  .buyup__title {
+    margin-left: 5%;
+    margin-right: 5%;
   }
   .buyup__img {
     margin-left: 20px;
