@@ -249,6 +249,12 @@ input[type="radio"].visually-hidden {
   font-weight: bold;
 }
 @font-face {
+  font-family: "open sans";
+  src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+}
+@font-face {
   font-family: "Intro";
   src: url("../fonts/introregular.woff2") format("woff2"), url("../fonts/introregular.woff") format("woff");
   font-style: normal;
@@ -1267,7 +1273,7 @@ input[type="radio"].visually-hidden {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   position: relative;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 .repair__title {
   font-size: 36px;
@@ -1360,6 +1366,7 @@ input[type="radio"].visually-hidden {
   font-family: "open sans";
   color: #000000;
   line-height: 1.2;
+  text-decoration: none;
 }
 .repair__see-next,
 .repair__button--active {
@@ -1418,7 +1425,109 @@ input[type="radio"].visually-hidden {
   margin-left: 5%;
   margin-right: 5%;
 }
+.repair__text--bold {
+  font-family: "open sans semibold";
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+.repair__lists {
+  padding: 0;
+  list-style-type: none;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+.repair__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-shadow: 0px 9px 11px 0px rgba(0, 0, 0, 0.11);
+          box-shadow: 0px 9px 11px 0px rgba(0, 0, 0, 0.11);
+}
+.repair__name {
+  font-size: 16px;
+  font-family: "open sans semibold";
+  color: #000000;
+  line-height: 1.2;
+}
+.repair__description {
+  font-size: 16px;
+  font-family: "open sans";
+  color: #000000;
+  line-height: 1.2;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.repair__buttons {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 45px;
+  margin-bottom: 55px;
+}
+.repair__but {
+  font-size: 16px;
+  font-family: "open sans";
+  color: #000000;
+  line-height: 1.2;
+  border: 1px solid #44e0dd;
+  width: 166px;
+  height: 57px;
+  border-radius: 50px;
+  margin-bottom: 20px;
+  background-color: #ffffff;
+}
+.repair__but-active {
+  background-color: #44e0dd;
+  width: 162px;
+  height: 53px;
+}
+.repair__price {
+  font-size: 16px;
+  font-family: "open sans";
+  color: #000000;
+  font-weight: bold;
+  line-height: 1.5;
+}
+.repair__list button {
+  border: 1px solid #44e0dd;
+  border-radius: 50px;
+  background-color: rgba(54, 210, 200, 0);
+  font-size: 15px;
+  font-family: "Intro";
+  color: #000000;
+  line-height: 1.2;
+  -webkit-transform: matrix(0.91362126, 0, 0, 0.91891892, 0, 0);
+          transform: matrix(0.91362126, 0, 0, 0.91891892, 0, 0);
+  width: 200px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.repair__info {
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 40px;
+  font-size: 12px;
+  font-family: "open sans";
+  line-height: 1.2;
+  text-align: left;
+}
 @media (min-width: 768px) {
+  .repair__list button {
+    margin-top: 10px;
+  }
+  .repair__but {
+    margin-right: 24px;
+  }
   .repair__image {
     width: 374px;
     min-height: 486px;
@@ -1443,16 +1552,33 @@ input[type="radio"].visually-hidden {
     margin-top: 30px;
     margin-bottom: 40px;
   }
+  .repair__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .repair__name {
+    width: 150px;
+  }
+  .repair__description {
+    width: 200px;
+  }
 }
 @media (min-width: 1440px) {
   .repair {
-    padding-bottom: 110px;
+    padding-bottom: 55px;
   }
   .repair__blocks {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .repair__info {
+    width: 740px;
   }
   .repair__content {
     -webkit-box-orient: horizontal;
@@ -1472,6 +1598,11 @@ input[type="radio"].visually-hidden {
   }
   .repair__text:first-child {
     margin-top: 0;
+  }
+  .repair__list button {
+    width: 279px;
+    height: 72px;
+    margin: 20px;
   }
 }
 .buyup {
@@ -1516,6 +1647,8 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .buyup__position {
   display: -webkit-box;
