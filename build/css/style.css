@@ -1728,14 +1728,23 @@ input[type="radio"].visually-hidden {
 }
 .buyup__choice::before {
   background: url("../img/arrow.png") no-repeat;
-  left: -40px;
+  left: -25px;
 }
 .buyup__choice::after {
   background: url("../img/rarrow.png") no-repeat;
-  right: -40px;
+  right: -25px;
 }
-.buyup__item {
-  padding: 20px;
+.buyup__items {
+  min-width: 90px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .buyup__samsung {
   width: 182px;
