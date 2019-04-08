@@ -1348,6 +1348,21 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #ffffff;
+  border: none;
+}
+.repair__buttons li {
+  border: none;
+  background-color: #ffffff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .repair__button {
   display: -webkit-box;
@@ -1359,25 +1374,44 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5px;
-  border: none;
-  background-color: #ffffff;
+  margin: 10px;
+  background: none;
   font-size: 16px;
   font-family: "open sans";
   color: #000000;
   line-height: 1.2;
   text-decoration: none;
+  border: none;
 }
-.repair__see-next,
-.repair__button--active {
+.repair__see-next {
   width: 162px;
   height: 53px;
   border-radius: 50px;
 }
 .repair__button--active {
-  background-color: #44e0dd;
+  height: 53px!important;
+  background-color: #44e0dd !important;
+  border: none!important;
+  border-radius: 50px;
 }
 .repair__see-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 10px;
+  background: none;
+  font-size: 16px;
+  font-family: "open sans";
+  color: #000000;
+  line-height: 1.2;
+  text-decoration: none;
+  border: none;
   background-color: #b8b9b9;
   margin-top: 20px;
   margin-bottom: 30px;
@@ -1539,10 +1573,6 @@ input[type="radio"].visually-hidden {
   .repair__image img {
     width: 331px;
     height: 359px;
-  }
-  .repair__button {
-    margin: 0;
-    margin-right: 10px;
   }
   .repair__buttons {
     -webkit-box-orient: horizontal;

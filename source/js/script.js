@@ -16,6 +16,15 @@
     }
   })();
 
+  $( function() {
+      $("#tabs").tabs();
+    } );
+
+  $('.repair__buttons li').click(function(){
+    $(this).addClass('repair__button--active');
+    $('.repair__buttons li').not(this).removeClass('repair__button--active');
+  })
+
   $('.repair__list button').click(function() {
     $('.modal').show();
     $(this).addClass('repair__active');

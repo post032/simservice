@@ -61,34 +61,59 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  background: #ffffff;
+  border: none;
+}
+
+.repair__buttons li {
+  border: none;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .repair__button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5px;
   border: none;
-  background-color: #ffffff;
+  margin: 10px;
+  background: none;
   font-size: 16px;
   font-family: "open sans";
   color: rgb(0, 0, 0);
   line-height: 1.2;
   text-decoration: none;
+  border: none;
 }
 
-.repair__see-next,
-.repair__button--active {
+.repair__see-next {
   width: 162px;
   height: 53px;
   border-radius: 50px;
 }
 
 .repair__button--active {
-  background-color: rgb(68, 224, 221);
+  height: 53px!important;
+  background-color: rgb(68, 224, 221)!important;
+  border: none!important;
+  border-radius: 50px;
 }
 
 .repair__see-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin: 10px;
+  background: none;
+  font-size: 16px;
+  font-family: "open sans";
+  color: rgb(0, 0, 0);
+  line-height: 1.2;
+  text-decoration: none;
+  border: none;
   background-color: rgb(184, 185, 185);
   margin-top: 20px;
   margin-bottom: 30px;
@@ -246,10 +271,10 @@
     height: 359px;
   }
 
-  .repair__button {
-    margin: 0;
-    margin-right: 10px;
-  }
+  // .repair__button {
+  //   margin: 0;
+  //   margin-right: 10px;
+  // }
 
   .repair__buttons {
     flex-direction: row;
