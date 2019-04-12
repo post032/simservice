@@ -1715,27 +1715,8 @@ input[type="radio"].visually-hidden {
   position: relative;
   margin-bottom: 20px;
 }
-.buyup__choice::before,
-.buyup__choice::after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 30px;
-  height: 43px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
-}
-.buyup__choice::before {
-  background: url("../img/arrow.png") no-repeat;
-  left: -25px;
-}
-.buyup__choice::after {
-  background: url("../img/rarrow.png") no-repeat;
-  right: -25px;
-}
 .buyup__items {
-  min-width: 90px;
+  width: 250px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1890,6 +1871,52 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 .buyup2__submit--position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.buyup__choice .slick-prev:before,
+.buyup__choice .slick-next:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 43px;
+  top: 0;
+  -webkit-font-smoothing: antialiased;
+  position: absolute;
+  -moz-osx-font-smoothing: grayscale;
+  outline: none;
+  z-index: 101;
+}
+.buyup__choice .slick-prev,
+.buyup__choice .slick-next {
+  position: absolute;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 100;
+}
+.buyup__choice .slick-prev {
+  left: -25px;
+}
+.buyup__choice .slick-next {
+  right: -25px;
+}
+.buyup__choice .slick-prev:before {
+  background: url("../img/arrow.png") no-repeat;
+  left: 0;
+}
+.buyup__choice .slick-next:before {
+  background: url("../img/rarrow.png") no-repeat;
+  right: 0;
+}
+.slick-initialized .slick-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
